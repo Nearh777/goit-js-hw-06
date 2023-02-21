@@ -6,3 +6,7 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+const ingredientsRef = document.createElement('li');
+ingredientsRef.classList.add('item');
+console.log(ingredientsRef);
