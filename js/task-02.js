@@ -7,7 +7,16 @@ const ingredients = [
   'Condiments',
 ];
 
-const ingredientsListRef = document.querySelector('#ingredients');
+const ingredientsListEl = document.querySelector('#ingredients');
+
+ingredients.forEach(element) => {
+  const makeLiEl = document.createElement('li');
+  makeLiEl.classList.add('item');
+  makeLiEl.textContent = element;
+  return makeLiEl;
+};
+ingredientsListEl.appendChild(makeLiEl);
+
 
 // const elements = option => {
 //   const ingredientsRef = document.createElement('li');
@@ -17,19 +26,20 @@ const ingredientsListRef = document.querySelector('#ingredients');
 //   return ingredientsRef;
 // };
 
-const makeIngredients = opton => {
+// const makeIngredients = opton => {
   
-  const ingredientsRef = document.createElement('li');
-  ingredientsRef.classList.add('item');
-  ingredientsRef.textContent = opton;
-  return ingredientsRef;
-};
+//   const ingredientsRef = document.createElement('li');
+//   ingredientsRef.classList.add('item');
+//   ingredientsRef.textContent = opton;
+//   return ingredientsRef;
+// };
 
-const elements = makeIngredients(ingredients);
+// const elements = makeIngredients(ingredients);
 
 
-ingredientsListRef.append(...elements);
+// ingredientsListRef.append(...elements);
 
 // const ingredientsRef = document.createElement('li');
 // ingredientsRef.classList.add('item');
 // console.log(ingredientsRef);
+
