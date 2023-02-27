@@ -1,6 +1,14 @@
-const textInput = document.querySelector("#validation-input");
-const setFocusInput = document.querySelector("validation-input.valid");
-const removeFocusInput = document.querySelector("validation-input.valid");
+const inputEl = document.querySelector("#validation-input");
+// const setFocusInput = document.querySelector("validation-input.valid");
+// const removeFocusInput = document.querySelector("validation-input.valid");
 
-setFocusInput.addEventListener("click", () => {
-  textInput.focus();
+inputEl.addEventListener("blur", () => {
+  const inputLength = inputEl.dataset.length;
+  
+  if (inputLength >= 6) {
+    inputEl.classList.add('valid')
+  } else {
+    inputEl.classList.add('invalid')
+  };
+  
+});  
