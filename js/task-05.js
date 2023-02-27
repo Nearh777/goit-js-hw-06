@@ -5,4 +5,5 @@ output.textContent = event.currentTarget.value.trim();
 
 if (event.target.value === "") {
 output.textContent = "Anonymous";
+}
 });
