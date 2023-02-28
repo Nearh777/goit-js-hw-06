@@ -1,4 +1,4 @@
-const formEl = document.querySelector('.login-form');
+const formEl = document.querySelector('.login-form')
 
 form.addEventListene('submit', (event) => {
   const{ elements: { email, password },
