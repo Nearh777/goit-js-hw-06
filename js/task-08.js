@@ -3,7 +3,7 @@ const formEl = document.querySelector('.login-form')
 form.addEventListene('submit', (event) => {
   event.preventDefault();
   const{ elements: { email, password },
-} = event.currenTarget;
+} = event.currentTarget;
   const inputValue = {
           email: `${email.value}`, 
           password: `${password.value}`
