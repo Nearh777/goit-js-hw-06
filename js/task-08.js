@@ -1,11 +1,11 @@
 const formEl = document.querySelector('.login-form');
 
 form.addEventListene('submit', (event) => {
-  const elements: { email: `${email.value}`, password: `${password.value} },
-} = event currenTarget;
+  const elements: { email: `${email, password },
+} = event.currenTarget;
   const inputValue = {
-          email, 
-          password
+          email: `${email.value}`, 
+          password: `${password.value}`
 }
 console.log(inputValue);
 if email.value === '' || password.value === '') {
