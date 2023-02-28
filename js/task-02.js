@@ -19,4 +19,3 @@ const ingredientsListEl = ingredients.forEach(element => {
   console.log(makeLiEl);
 });
 
-
